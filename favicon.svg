@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <!-- Dark navy background -->
+  <rect width="200" height="200" fill="#001A4D"/>
+
+  <!-- Simplified NaraTrad logo elements -->
+  <!-- Main circle -->
+  <circle cx="100" cy="100" r="85" fill="none" stroke="#6366F1" stroke-width="3"/>
+
+  <!-- Chart bars (simplified) -->
+  <rect x="60" y="110" width="8" height="20" fill="white" rx="2"/>
+  <rect x="75" y="105" width="8" height="25" fill="white" rx="2"/>
+  <rect x="90" y="100" width="8" height="30" fill="white" rx="2"/>
+  <rect x="105" y="95" width="8" height="35" fill="white" rx="2"/>
+
+  <!-- Upward arrow -->
+  <line x1="70" y1="115" x2="110" y2="75" stroke="white" stroke-width="4" stroke-linecap="round"/>
+  <polygon points="110,75 120,70 110,85" fill="white"/>
+
+  <!-- "HUB" text -->
+  <text x="100" y="155" font-size="24" font-weight="bold" fill="#6366F1" text-anchor="middle" font-family="Arial, sans-serif">HUB</text>
+</svg>

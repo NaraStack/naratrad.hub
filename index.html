@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NaraTrad - Project Hub</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: 'Outfit', sans-serif;
+        }
+        body {
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+            min-height: 100vh;
+        }
+        .card-hover {
+            @apply transition-all duration-300 hover:shadow-xl hover:scale-105 cursor-pointer;
+        }
+        .primary-btn {
+            @apply px-8 py-3 bg-indigo-600 text-white font-bold rounded-lg transition-all hover:bg-indigo-700 shadow-lg;
+        }
+        .secondary-card {
+            @apply bg-slate-800/80 backdrop-blur rounded-xl p-6 card-hover border border-indigo-500/30 hover:border-indigo-500/60;
+        }
+    </style>
+</head>
+<body class="text-white">
+    <!-- Navigation -->
+    <nav class="bg-black/40 backdrop-blur-md border-b border-indigo-500/20">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <svg class="w-10 h-10" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Background circle -->
+                    <circle cx="100" cy="100" r="95" fill="#001A4D"/>
+                    <!-- Chart bars -->
+                    <rect x="55" y="120" width="12" height="35" fill="white" rx="2"/>
+                    <rect x="75" y="105" width="12" height="50" fill="white" rx="2"/>
+                    <rect x="95" y="85" width="12" height="70" fill="white" rx="2"/>
+                    <rect x="115" y="70" width="12" height="85" fill="white" rx="2"/>
+                    <!-- Arrow line -->
+                    <line x1="50" y1="125" x2="135" y2="50" stroke="white" stroke-width="12" stroke-linecap="round"/>
+                    <!-- Arrow head -->
+                    <polygon points="135,50 148,45 138,62" fill="white"/>
+                    <!-- Indigo accent curves -->
+                    <path d="M 160 80 Q 180 100 160 140" stroke="#6366F1" stroke-width="14" fill="none" stroke-linecap="round"/>
+                    <path d="M 35 140 Q 15 100 35 60" stroke="#6366F1" stroke-width="14" fill="none" stroke-linecap="round"/>
+                </svg>
+                <h1 class="text-2xl font-bold">NaraTrad Hub</h1>
+            </div>
+        </div>
+    </nav>
+
+    <main class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <!-- Header Section -->
+        <section class="text-center mb-16">
+            <h2 class="text-5xl sm:text-6xl font-bold mb-4 bg-gradient-to-r from-indigo-400 to-indigo-300 bg-clip-text text-transparent">
+                Welcome to NaraTrad Hub
+            </h2>
+            <p class="text-xl text-gray-200 max-w-2xl mx-auto">
+                Your central hub for accessing all NaraTrad project resources, documentation, and tools
+            </p>
+        </section>
+
+        <!-- Featured NaraTrad FE Application -->
+        <section class="mb-16">
+            <div class="bg-gradient-to-r from-indigo-600 to-indigo-500 rounded-2xl p-1 card-hover">
+                <div class="bg-gradient-to-br from-slate-800 to-slate-900 rounded-2xl p-8 sm:p-12">
+                    <div class="flex flex-col sm:flex-row items-center justify-between gap-8">
+                        <div class="flex-1">
+                            <h3 class="text-3xl sm:text-4xl font-bold mb-3">NaraTrad Application</h3>
+                            <p class="text-indigo-100 mb-6 text-lg">
+                                Explore the live NaraTrad application and experience the full platform in action
+                            </p>
+                            <span class="inline-block px-8 py-3 bg-gray-600 text-gray-200 font-bold rounded-lg cursor-not-allowed">
+                                Coming Soon
+                            </span>
+                        </div>
+                        <div class="flex-1 flex justify-center">
+                            <div class="text-6xl opacity-80">📊</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Resources Grid -->
+        <section>
+            <h3 class="text-3xl font-bold mb-8">Project Resources</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+
+                <!-- Backend Deployment -->
+                <a href="https://naratrad-be-production.up.railway.app/" target="_blank" rel="noopener noreferrer" class="secondary-card group">
+                    <div class="flex items-start justify-between mb-4">
+                        <div>
+                            <h4 class="text-xl font-bold text-slate-100 group-hover:text-indigo-300 transition-colors">Backend API</h4>
+                            <p class="text-sm text-slate-400">Deployment</p>
+                        </div>
+                        <span class="text-2xl">🚀</span>
+                    </div>
+                    <p class="text-slate-300 text-sm">
+                        Access the live backend API for the NaraTrad platform
+                    </p>
+                </a>
+
+                <!-- Frontend Repository -->
+                <a href="https://github.com/NaraStack/NaraTrad-FE" target="_blank" rel="noopener noreferrer" class="secondary-card group">
+                    <div class="flex items-start justify-between mb-4">
+                        <div>
+                            <h4 class="text-xl font-bold text-slate-100 group-hover:text-indigo-300 transition-colors">Frontend Repository</h4>
+                            <p class="text-sm text-slate-400">Source Code</p>
+                        </div>
+                        <span class="text-2xl">💻</span>
+                    </div>
+                    <p class="text-slate-300 text-sm">
+                        View and contribute to the NaraTrad frontend codebase
+                    </p>
+                </a>
+
+                <!-- Backend Repository -->
+                <a href="https://github.com/NaraStack/NaraTrad-BE" target="_blank" rel="noopener noreferrer" class="secondary-card group">
+                    <div class="flex items-start justify-between mb-4">
+                        <div>
+                            <h4 class="text-xl font-bold text-slate-100 group-hover:text-indigo-300 transition-colors">Backend Repository</h4>
+                            <p class="text-sm text-slate-400">Source Code</p>
+                        </div>
+                        <span class="text-2xl">⚙️</span>
+                    </div>
+                    <p class="text-slate-300 text-sm">
+                        Explore and contribute to the NaraTrad backend codebase
+                    </p>
+                </a>
+
+                <!-- API Documentation -->
+                <a href="https://naratrad-be-production.up.railway.app/swagger-ui/index.html" target="_blank" rel="noopener noreferrer" class="secondary-card group">
+                    <div class="flex items-start justify-between mb-4">
+                        <div>
+                            <h4 class="text-xl font-bold text-slate-100 group-hover:text-indigo-300 transition-colors">API Documentation</h4>
+                            <p class="text-sm text-slate-400">Swagger UI</p>
+                        </div>
+                        <span class="text-2xl">📚</span>
+                    </div>
+                    <p class="text-slate-300 text-sm">
+                        Interactive API documentation with Swagger
+                    </p>
+                </a>
+
+                <!-- Design System -->
+                <a href="https://www.figma.com/files/team/1581285019826294374/project/515421819/NaraTrad?fuid=1019531477556462556" target="_blank" rel="noopener noreferrer" class="secondary-card group">
+                    <div class="flex items-start justify-between mb-4">
+                        <div>
+                            <h4 class="text-xl font-bold text-slate-100 group-hover:text-indigo-300 transition-colors">Design System</h4>
+                            <p class="text-sm text-slate-400">Figma</p>
+                        </div>
+                        <span class="text-2xl">🎨</span>
+                    </div>
+                    <p class="text-slate-300 text-sm">
+                        UI/UX design specifications and components
+                    </p>
+                </a>
+
+                <!-- ER Diagram -->
+                <div class="secondary-card group">
+                    <div class="flex items-start justify-between mb-4">
+                        <div>
+                            <h4 class="text-xl font-bold text-slate-100 group-hover:text-indigo-300 transition-colors">Database Schema</h4>
+                            <p class="text-sm text-slate-400">ER Diagram</p>
+                        </div>
+                        <span class="text-2xl">🗄️</span>
+                    </div>
+                    <p class="text-slate-300 text-sm">
+                        Entity-relationship diagram for the database structure
+                    </p>
+                </div>
+
+                <!-- Presentation Deck -->
+                <a href="https://www.canva.com/design/DAG74CAb9wE/5xmarP8o_0xvNPezXT8WlA/edit?utm_content=DAG74CAb9wE&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target="_blank" rel="noopener noreferrer" class="secondary-card group">
+                    <div class="flex items-start justify-between mb-4">
+                        <div>
+                            <h4 class="text-xl font-bold text-slate-100 group-hover:text-indigo-300 transition-colors">Presentation Deck</h4>
+                            <p class="text-sm text-slate-400">Slides & Overview</p>
+                        </div>
+                        <span class="text-2xl">📊</span>
+                    </div>
+                    <p class="text-slate-300 text-sm">
+                        Project presentation and overview materials on Canva
+                    </p>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-indigo-500/20 mt-20 py-8 bg-black/40">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-slate-400">
+            <p class="mb-2">© 2025 NaraTrad. All rights reserved.</p>
+            <p class="text-sm">Built by NaraStack Team</p>
+        </div>
+    </footer>
+</body>
+</html>
